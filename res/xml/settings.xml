@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <EditTextPreference
+        android:dialogMessage="Enter Maximum Threshold"
+        android:dialogTitle="Ifall Settings"
+        android:key="threshold"
+        android:summary="Enter Threshold of value Sensor"
+        android:title="Maximum threshold Value" />
+    <EditTextPreference
+        android:dialogMessage="Enter Message Content"
+        android:dialogTitle="Ifall Settings"
+        android:key="message"
+        android:summary="Enter The Message to be sent"
+        android:title="Enter Message Content" />
+    <EditTextPreference
+        android:dialogMessage="Enter Password"
+        android:dialogTitle="Ifall Settings"
+        android:key="pass"
+        android:summary="Enter The Password to be Sent With the Message"
+        android:title="Enter Password" />
+    <EditTextPreference
+        android:dialogMessage="Enter Delay Value"
+        android:dialogTitle="Ifall Settings"
+        android:key="delay"
+        android:summary="Select Delay after making fall in Milli Seconds"
+        android:title="Enter Delay" />
+
+    <CheckBoxPreference
+        android:key="gps"
+        android:summary="Enable GPS Co-Ordinates to be attached in Message"
+        android:title="Emable GPS Access" />
+
+</PreferenceScreen>

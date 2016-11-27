@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vishwanath.android.ifallproject"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+    <!-- <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" /> -->
+    <uses-permission android:name="android.permission.VIBRATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE" >
+    </uses-permission>
+    <!--
+         <uses-permission android:name="android.permission.CALL_PRIVILEGED" >
+    </uses-permission>
+    -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ifall_icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.DeviceDefault.Light" >
+        <activity
+            android:name="Ifall"
+            android:label="Ifall" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="IfallListActivity"
+            android:label="IfallListActivity" >
+            <intent-filter>
+                <action android:name="com.vishwanath.android.ifallproject.IfallListActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="Manager"
+            android:label="Manager" >
+            <intent-filter>
+                <action android:name="com.vishwanath.android.ifallproject.Manager" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ShowContacts"
+            android:label="ShowContacts" >
+            <intent-filter>
+                <action android:name="com.vishwanath.android.ifallproject.ShowContacts" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="AddContact"
+            android:label="AddContact" >
+            <intent-filter>
+                <action android:name="com.vishwanath.android.ifallproject.AddContact" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="Settings"
+            android:label="Settings" >
+            <intent-filter>
+                <action android:name="com.vishwanath.android.ifallproject.Settings" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="DeleteContacts"
+            android:label="DeleteContacts" >
+            <intent-filter>
+                <action android:name="com.vishwanath.android.ifallproject.DeleteContacts" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
